@@ -130,14 +130,27 @@ p {
     cursor: pointer;
 }
 
-.inner-info-flex {
+.inner-info {
+    width: 100%;
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    margin-bottom: 30px;
 }
 
-.inner-info-flex .rounds,
-.inner-info-flex .timer {
-    font-size: 18px;
+.inner-info .time label,
+.inner-info .rounds label {
+    font-size: 20px;
+    color: var(--primary-color);
+    border-bottom: 2px dotted var(--primary-color);
+    padding-bottom: 3px;
+}
+
+.inner-info .time span,
+.inner-info .rounds span {
+    font-size: 20px;
+    font-weight: 900;
     color: var(--primary-color);
 }
 
