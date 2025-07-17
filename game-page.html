@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUINMATH | Game Round</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/puzzle.jpeg">
+</head>
+<body>
+    <div class="navbar">
+        <img src="Images/puzzle.jpeg" alt="Logo">
+        <h1>QUINMATH</h1>
+    </div>
+    <div class="info-flex">
+        <div class="cat-dif">
+            <span class="cat">General</span>
+            <span class="dif">Easy</span>
+        </div>
+        <button class="end">End Game</button>
+    </div>
+    <div class="container">
+        <div class="inner-info-flex">
+            <div class="rounds">
+                <label for="round">Round:</label>
+                <span id="round" class="round">0</span>
+            </div>
+            <div class="time">
+                <label for="timer">Timer:</label>
+                <span id="timer" class="timer">0</span>
+            </div>
+        </div>
+
+        <h1>Question:</h1>
+
+        <div class="questions">
+            <span class="question" id="first">1000</span>
+            <span class="question" id="cal">+</span>
+            <span class="question" id="second">1000</span>
+        </div>
+
+        <input type="text" class="user-input" placeholder="Input Answer">
+        <button class="btn">Submit</button>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
