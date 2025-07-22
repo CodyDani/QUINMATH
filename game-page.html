@@ -15,10 +15,10 @@
     </div>
     <div class="info-flex">
         <div class="cat-dif">
-            <span class="cat">General</span>
-            <span class="dif">Easy</span>
+            <span class="cat" id="specialization-display">General</span>
+            <span class="dif" id="difficulty-display">Easy</span>
         </div>
-        <button class="end">End Game</button>
+        <button class="end" onclick="endGameOne()">End Game</button>
     </div>
     <div class="container">
         <div class="inner-info">
@@ -41,8 +41,8 @@
             <span class="question" id="second">1000</span>
         </div>
 
-        <input type="text" class="user-input" placeholder="Input Answer">
-        <button class="btn">Submit</button>
+        <input type="text" class="user-input" id="user-input" placeholder="Input Answer">
+        <button class="btn" onclick="quizSubmit()">Submit</button>
     </div>
     
     <script src="main.js"></script>
