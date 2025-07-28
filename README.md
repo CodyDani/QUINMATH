@@ -46,6 +46,8 @@ QuinMath/
 │
 └── README.md            # You are here!
 
+---
+
 #💡 How It Works
 1. Select your specialization and difficulty level from the home screen.
 2. Click Start to begin a 10-round quiz.
