@@ -43,29 +43,29 @@
 
 # 🎓 Who It's For
 This game is perfect for:
-🧒 Young learners who want to improve their arithmetic
-👨‍🏫 Teachers who want to make math fun
-👨‍💻 Beginners learning JavaScript through real-world projects
+- 🧒 Young learners who want to improve their arithmetic
+- 👨‍🏫 Teachers who want to make math fun
+- 👨‍💻 Beginners learning JavaScript through real-world projects
 
 # 🧪 Future Improvements
-🎵 Add sound effects and background music
-👥 User login & progress tracking
-🧠 Smarter question engine (adaptive difficulty)
-📱 Full mobile responsiveness
-🌐 Online leaderboard integration
+- 🎵 Add sound effects and background music
+- 👥 User login & progress tracking
+- 🧠 Smarter question engine (adaptive difficulty)
+- 📱 Full mobile responsiveness
+- 🌐 Online leaderboard integration
 
 # 📬 Feedback & Contributions
 If you find bugs, have suggestions, or want to contribute:
---Fork the repo
---Open a Pull Request
---Or contact me via GitHub Issues
+- Fork the repo
+- Open a Pull Request
+- Or contact me via GitHub Issues
 
 # 🧑‍🎓 Built by
-**Daniel Agada Alfred -- **
-Backend/Web Development Student | Passionate about Education & Innovation
+**Daniel Agada Alfred**
+- Backend/Web Development Student | Passionate about Education & Innovation
 
 # 🖼️ Preview
-Fun and focused – learning math just got exciting!
+- Fun and focused – learning math just got exciting!
 
 
 ## 📂 Project Structure
