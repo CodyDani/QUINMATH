@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const quizScore = localStorage.getItem('quizScore');
 
     retry.addEventListener('click', () => {
-        window.location.href = '../game-page.html';
+        window.location.href = '/QUINMATH/game-page.html';
     })
 
     endGameTwo.addEventListener('click', () => {
-        window.location.href = '../index.html';
+        window.location.href = '/QUINMATH/index.html';
     })
 
     userScore.textContent = quizScore;
