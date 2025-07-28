@@ -27,26 +27,6 @@
 
 ---
 
-## 📂 Project Structure
-
-```bash
-QuinMath/
-│
-├── index.html           # Home page - choose specialization & difficulty
-├── game-page.html       # Game page - play quiz, timer, score, rounds
-├── result.html          # Result summary - view score and feedback
-├── high-score.html      # High score board page
-│
-├── style.css            # Main styling for the app
-│
-├── scripts/
-│   ├── index.js         # Handles form submission and navigation
-│   ├── game.js          # Core game logic (question generation, timer, score)
-│   └── result.js        # Logic for displaying results and storing high scores
-│
-└── README.md            # You are here!
-
----
 
 #💡 How It Works
 1. Select your specialization and difficulty level from the home screen.
@@ -87,3 +67,24 @@ Backend/Web Development Student | Passionate about Education & Innovation
 
 🖼️ Preview
 Fun and focused – learning math just got exciting!
+
+## 📂 Project Structure
+
+```bash
+QuinMath/
+│
+├── index.html           # Home page - choose specialization & difficulty
+├── game-page.html       # Game page - play quiz, timer, score, rounds
+├── result.html          # Result summary - view score and feedback
+├── high-score.html      # High score board page
+│
+├── style.css            # Main styling for the app
+│
+├── scripts/
+│   ├── index.js         # Handles form submission and navigation
+│   ├── game.js          # Core game logic (question generation, timer, score)
+│   └── result.js        # Logic for displaying results and storing high scores
+│
+└── README.md            # You are here!
+
+---
