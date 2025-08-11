@@ -23,79 +23,79 @@ document.addEventListener("DOMContentLoaded", () => {
   let timer;
   let timeLeft = 15;
 
-    function getRange(difficulty) {
-  if (difficulty === "Easy") return [1, 10];
-  if (difficulty === "Medium") return [10, 50];
-  if (difficulty === "Hard") return [50, 100];
+  function getRange(difficulty) {
+      if (difficulty === "Easy") return [1, 10];
+      if (difficulty === "Medium") return [10, 50];
+      if (difficulty === "Hard") return [50, 100];
 }
 
   function generateQuestion(specialization, difficulty) {
-  const [min, max] = getRange(difficulty);
-  const num1 = Math.floor(Math.random() * (max - min + 1)) + min;
-  const num2 = Math.floor(Math.random() * (max - min + 1)) + min;
+      const [min, max] = getRange(difficulty);
+      const num1 = Math.floor(Math.random() * (max - min + 1)) + min;
+      const num2 = Math.floor(Math.random() * (max - min + 1)) + min;
 
-  if (specialization === "General") {
-    const types = ["Addition", "Subtraction", "Multiplication", "Division"];
-    const randomSpec = types[Math.floor(Math.random() * types.length)];
-    return generateQuestion(randomSpec, difficulty);
-  }
+      if (specialization === "General") {
+          const types = ["Addition", "Subtraction", "Multiplication", "Division"];
+          const randomSpec = types[Math.floor(Math.random() * types.length)];
+          return generateQuestion(randomSpec, difficulty);
+      }
 
-  switch (specialization) {
-    case "Addition":
-      return { question: `${num1} + ${num2}`, answer: num1 + num2 };
-    case "Subtraction":
-      return { question: `${num1} - ${num2}`, answer: num1 - num2 };
-    case "Multiplication":
-      return { question: `${num1} × ${num2}`, answer: num1 * num2 };
-    case "Division":
-      return {
-        question: `${num1 * num2} ÷ ${num1}`,
-        answer: num2,
-      };
-    default:
-      console.error("Invalid specialization:", specialization);
-      return { question: "Invalid Spec", answer: 0 };
-  }
+      switch (specialization) {
+        case "Addition":
+          return { question: `${num1} + ${num2}`, answer: num1 + num2 };
+        case "Subtraction":
+          return { question: `${num1} - ${num2}`, answer: num1 - num2 };
+        case "Multiplication":
+          return { question: `${num1} × ${num2}`, answer: num1 * num2 };
+        case "Division":
+          return {
+            question: `${num1 * num2} ÷ ${num1}`,
+            answer: num2,
+          };
+        default:
+          console.error("Invalid specialization:", specialization);
+          return { question: "Invalid Spec", answer: 0 };
+      }
 }
 
 
   function startTimer() {
-    timeLeft = 15;
-    timerDisplay.textContent = timeLeft;
-    timer = setInterval(() => {
-      timeLeft--;
+      timeLeft = 15;
       timerDisplay.textContent = timeLeft;
-      if (timeLeft === 0) {
-        clearInterval(timer);
-        skipQuestion();
-      }
-    }, 1000);
+      timer = setInterval(() => {
+        timeLeft--;
+        timerDisplay.textContent = timeLeft;
+        if (timeLeft === 0) {
+          clearInterval(timer);
+          skipQuestion();
+        }
+      }, 1000);
   }
 
   function skipQuestion() {
-    currentRound++;
-    if (currentRound > totalRounds) {
-      endGame();
-    } else {
-      startRound();
-    }
+      currentRound++;
+      if (currentRound > totalRounds) {
+        endGame();
+      } else {
+        startRound();
+      }
   }
 
   function startRound() {
-    userAnswerInput.value = "";
-    roundDisplay.textContent = `${currentRound}/${totalRounds}`;
-    const { question, answer } = generateQuestion(spec, diff);
-    questionDisplay.textContent = question;
-    correctAnswer = answer;
+      userAnswerInput.value = "";
+      roundDisplay.textContent = `${currentRound}/${totalRounds}`;
+      const { question, answer } = generateQuestion(spec, diff);
+      questionDisplay.textContent = question;
+      correctAnswer = answer;
 
-    clearInterval(timer);
-    startTimer();
+      clearInterval(timer);
+      startTimer();
   }
 
   function endGame() {
-    clearInterval(timer);
-    localStorage.setItem("quizScore", score);
-    window.location.href = "result.html";
+      clearInterval(timer);
+      localStorage.setItem("quizScore", score);
+      window.location.href = "result.html";
   }
 
   document.getElementById("submitBtn").addEventListener("click", () => {
