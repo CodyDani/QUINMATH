@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const diff = localStorage.getItem("difficulty");
 
   if (!spec || !diff) {
-    alert("Missing quiz setup. Redirecting to home...");
+    alert("Missed quiz setup. Redirecting to home...");
     window.location.href = "index.html";
     return;
   }
